@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experiences_infos",
+  "info": {
+    "name": "ExperiencesInfo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "companyName": {
+      "type": "string",
+      "required": true
+    },
+    "Startpoint": {
+      "type": "date"
+    },
+    "Endpoint": {
+      "type": "date"
+    },
+    "Role": {
+      "type": "string",
+      "required": true
+    },
+    "projects": {
+      "via": "experiences_info",
+      "collection": "projects"
+    }
+  }
+}

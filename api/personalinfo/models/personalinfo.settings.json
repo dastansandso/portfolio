@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "personalinfos",
+  "info": {
+    "name": "personalinfo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "About_User": {
+      "type": "richtext"
+    },
+    "displayName": {
+      "type": "string",
+      "required": true
+    },
+    "emailId": {
+      "type": "email",
+      "required": true
+    },
+    "contactNumber": {
+      "type": "biginteger",
+      "required": true
+    },
+    "currentRole": {
+      "type": "string",
+      "required": true
+    },
+    "Address": {
+      "type": "string"
+    },
+    "MaritalStatus": {
+      "type": "string"
+    },
+    "Linkedin": {
+      "type": "string"
+    },
+    "Github": {
+      "type": "string"
+    }
+  }
+}

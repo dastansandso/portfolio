@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "projects"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "experiences_info": {
+      "model": "experiences-info",
+      "via": "projects"
+    },
+    "ProjectName": {
+      "type": "string",
+      "required": true
+    },
+    "TeamSize": {
+      "type": "integer"
+    },
+    "TechnologyUsed": {
+      "type": "string",
+      "required": true
+    },
+    "ExternalLink": {
+      "type": "string",
+      "required": true,
+      "regex": "[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
+    }
+  }
+}

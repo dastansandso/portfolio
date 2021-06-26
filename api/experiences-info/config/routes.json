@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/experiences-infos",
+      "handler": "experiences-info.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/experiences-infos/count",
+      "handler": "experiences-info.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/experiences-infos/:id",
+      "handler": "experiences-info.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/experiences-infos",
+      "handler": "experiences-info.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/experiences-infos/:id",
+      "handler": "experiences-info.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/experiences-infos/:id",
+      "handler": "experiences-info.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
